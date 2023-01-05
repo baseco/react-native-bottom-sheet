@@ -20,6 +20,13 @@ export interface BottomSheetModalProps
   name?: string;
 
   /**
+   * HostName to help identify which portal this bottom sheet 
+   * should be a part of
+   * @type string 
+   */
+  hostName?: string;
+
+  /**
    * Defines the stack behavior when modal mount.
    * - `push` it will mount the modal on top of current modal.
    * - `replace` it will minimize the current modal then mount the modal.

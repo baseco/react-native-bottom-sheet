@@ -186,6 +186,7 @@ const BottomSheetModalProviderWrapper = ({
           containerOffset={animatedContainerOffset}
           containerHeight={animatedContainerHeight}
           children={null}
+          style={{zIndex: 100}}
         />
         <PortalProvider>{children}</PortalProvider>
       </BottomSheetModalInternalProvider>

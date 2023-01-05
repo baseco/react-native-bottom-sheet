@@ -39,6 +39,7 @@ const BottomSheetModalComponent = forwardRef<
     stackBehavior = DEFAULT_STACK_BEHAVIOR,
     enableDismissOnClose = DEFAULT_ENABLE_DISMISS_ON_CLOSE,
     onDismiss: _providedOnDismiss,
+    hostName,
 
     // bottom sheet props
     index = 0,
@@ -363,8 +364,7 @@ const BottomSheetModalComponent = forwardRef<
   // console.log('BottomSheetModal', index, mount, data);
   return mount ? (
     <Portal
-      key={key}
-      name={key}
+      hostName={hostName}
       handleOnMount={handlePortalRender}
       handleOnUpdate={handlePortalRender}
       handleOnUnmount={handlePortalOnUnmount}
